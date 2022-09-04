@@ -1,0 +1,121 @@
+/* Головна сторінка Студія */
+/* шапка сайту */
+
+.page-studia { 
+  background-color:  #f5f5f5;
+  color: #757575;
+}
+
+ /* колір тексту в шапці (Web - #2196F3) (Studio - #000000 )  */
+ .logo { color: #000000; }
+ .logo-web { color: #2196F3; }
+/* скидання всіх крапок в ненумерованих списках не глобально */
+ .list { list-style: none; }
+ /* скидання глобально для ссилок нижнє підкреслення */
+ a { text-decoration: none; }
+
+
+ /* 
+ .page-studia  основний фон сторінки
+ .link оформлення для всіх ссилок на ньому кольори, ховер, фокус і курент
+ .site-navigation клас списків навігації
+ .list  клас списків навігації. скидання всіх крапок в ненумерованих списках 
+ .link.current  примусове підсвічування ссилки щоб знати на якій я сторінці знаходжуся
+.hero клас для секції в ньому темний фон
+.feature-list для фону секції. наші особливості, блоки тексту. 
+.title колір заголовків і тексту в секції наші особливості
+.photo-robota фон для секції із фото компютери
+.our-team фон секції наша команда із фотками працівників
+.basement підвал темний фон футера
+.adresa колір ссилок у футері
+ */
+
+
+/* ссилки Студія, портфоліо, контакти, сайт info@devstudio.com, номер тел,
+  в неактивному стані колір #212121 */
+  
+    .site-navigation .link {color: #212121; }
+  /* при наведенні або фокусуванні  на ссилку міняє колір на #2196F3 */
+  .site-navigation, .link:hover,
+  .site-navigation, .link:focus {color: #2196f3 }
+  /* ставимо клас current в ту ссилку на поточну сторінку в якій зараз знаходимося щоб підсвітити ссилку для інформації що ця сторінка зараз відкрита в браузері */
+  .site-navigation .link.current { color: #2196f3 ;}
+
+  /* Рішення для бізнесу hero     під шапкою перша секція */ 
+
+  .hero { background-color:  #2F303A; color: #FFFFFF;  }
+ 
+  
+.button { 
+  color: #FFFFFF;
+  background-color: #2196F3; 
+  font-size: 24px;
+    cursor: pointer;
+   }
+
+.button:hover,
+.button:focus {
+  color:   #2196F3;
+  background-color: #FFFFFF;}
+
+  
+  .feature-list {  background-color: #F5F5F5; }
+  /* ховаю заголовок (наші особливості) */
+  .feature-list > h2 {font-size: 0px; }
+  /* колір заголовків.. а колір тексту визначається як основний на сторінці */
+  .list.title h3 {color: #212121; }
+
+  .photo-robota  {  background-color: #F5F5F5;    }
+  .photo-robota h2  { color: #212121;}
+ 
+/* наша команда фотографії працівників */
+
+  .our-team {background-color: #F5F4FA; }
+  .our-team h2 { color: #212121; }   
+  .our-team .list h3 { color: #212121; } 
+
+  /* підвал футер */
+  .logofut-stud { color: #FFFFFF; }
+  .logo-wais-web { color: #2196F3; }
+
+  .basement {background-color: #2F303A; }
+  .adresa { 
+    color: rgba(255, 255, 255, 0.6); }
+
+  .basement, .adresa:hover,
+  .basement, .adresa:focus { color: rgba(255, 255, 255, 1); }
+
+  
+
+
+/* Портфоліо  стилі для другої сторінки з імям Портфоліо */
+
+.page-portfolio { background-color: #FFFFFF ; }
+
+/* F5F5F5  фон сторінки */
+.filters, .projects { background-color: #F5F5F5 ; }
+
+/* кнопки    налаштування кнопок (фільтри) */
+.filter-but { 
+  color: #212121;
+  background-color: #F5F4FA; 
+  font-size: 24px;
+    cursor: pointer;
+   }
+
+   .filter-but:hover,
+   .filter-but:focus {  
+    color:   #FFFFFF;
+    background-color: #2196F3; }
+
+    /* секція із фотографіями */
+/* ховаю заголовок h1 */
+.projects h1 {font-size: 0px; }
+.projects h2 { color: #212121; }
+.projects p { color: #757575; }
+     
+
+
+
+
+
