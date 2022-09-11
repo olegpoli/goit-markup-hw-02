@@ -1,14 +1,55 @@
 /* Головна сторінка Студія */
 /* шапка сайту */
-
-.page-studia { 
-  background-color:  #f5f5f5;
-  color: #757575;
+:root { 
+  --color-background-top-line: #FFFFFF;
+  --color-background-hero: #2F303A;
+  --color-background-feature-list: #F5F5F5  ;
+  --color-background-photo-robota: #F5F5F5  ;
+  --color-background-our-team: #F5F4FA  ;
+  --color-background-footer-basement: #2F303A  ;
+  --color-logo-web-top: #2196F3  ;
+  --color-logo-studio-top: #000000  ;
+  --color-logo-studio-footer: #FFFFFF  ;
+  --color-logo-web-footer: #2196F3  ;
+  --color-primary-menu-nav: #212121  ;
+  --color-accent-menu-nav: #2196f3  ;
+  --color-primary-contact-Information-top: #757575  ;
+  --color-text-hero: #FFFFFF  ;
+  --color-button-text: #FFFFFF  ;
+  --color-primary-background-button: #2196F3  ;
+  --color-accent-background-button: #188CE8  ;
+  --color-accent-text-button: #ffffff  ;
+  --color-text-title: #212121 ;
+  --color-text-paragraph: #757575  ;
+  --color-text-map: #FFFFFF  ;
+  --color-primary-contact-Information-footer: rgba(255, 255, 255, 0.6)  ;
+  --color-accent-contact-Information-footer: #2196f3  ;
+/* портфоліо */
+  --color-background-filter-but : #F5F4FA;
+  --color-accent-background-filter-but: #2196F3  ;
+  --color-text-filter-but : #212121;
+  --color-accent-text-filter-but : #FFFFFF;
+ }
+body { 
+  background-color:  var(--color-background-top-line);
+  color: var(--color-text-paragraph);
+  font-family: 'Roboto', sans-serif; 
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
 }
 
- /* колір тексту в шапці (Web - #2196F3) (Studio - #000000 )  */
- .logo { color: #000000; }
- .logo-web { color: #2196F3; }
+ .logo, .logo-web { color: var(--color-logo-studio-top); 
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+   }
+
+
+ .logo-web { color: var(--color-logo-web-top) ; }
 /* скидання всіх крапок в ненумерованих списках не глобально */
  .list { list-style: none; }
  /* скидання глобально для ссилок нижнє підкреслення */
@@ -30,89 +71,193 @@
 .adresa колір ссилок у футері
  */
 
-
-/* ссилки Студія, портфоліо, контакти, сайт info@devstudio.com, номер тел,
-  в неактивному стані колір #212121 */
-  
-    .site-navigation .link {color: #212121; }
+    .site-navigation .link {
+      color: var(--color-primary-menu-nav); 
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+       }
+       /*  */
+.site-navigation .linky {   
+  color:var(--color-primary-contact-Information-top);  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+  }  
   /* при наведенні або фокусуванні  на ссилку міняє колір на #2196F3 */
   .site-navigation, .link:hover,
-  .site-navigation, .link:focus {color: #2196f3 }
+  .site-navigation, .link:focus {color: var(--color-accent-menu-nav) }
   /* ставимо клас current в ту ссилку на поточну сторінку в якій зараз знаходимося щоб підсвітити ссилку для інформації що ця сторінка зараз відкрита в браузері */
-  .site-navigation .link.current { color: #2196f3 ;}
+  .site-navigation .link.current { color:var(--color-accent-menu-nav)  ;}
 
   /* Рішення для бізнесу hero     під шапкою перша секція */ 
 
-  .hero { background-color:  #2F303A; color: #FFFFFF;  }
+  .hero { 
+    background-color:var(--color-background-hero); 
+    color:var(--color-text-hero) ; 
+     font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase; }
  
   
 .button { 
-  color: #FFFFFF;
-  background-color: #2196F3; 
-  font-size: 24px;
-    cursor: pointer;
-   }
+  color:var(--color-button-text) ;
+  background-color:var(--color-primary-background-button) ; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;   }
 
 .button:hover,
 .button:focus {
-  color:   #2196F3;
-  background-color: #FFFFFF;}
+  color:   var(--color-accent-text-button);
+  background-color: var(--color-accent-background-button);}
 
   
-  .feature-list {  background-color: #F5F5F5; }
+  .feature-list {  background-color: var(--color-background-feature-list); }
   /* ховаю заголовок (наші особливості) */
   .feature-list > h2 {font-size: 0px; }
   /* колір заголовків.. а колір тексту визначається як основний на сторінці */
-  .list.title h3 {color: #212121; }
+  .list.title h3 {color:var(--color-text-title) ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase; }
 
-  .photo-robota  {  background-color: #F5F5F5;    }
-  .photo-robota h2  { color: #212121;}
+  .photo-robota  {  background-color:var(--color-background-photo-robota);    }
+  .photo-robota h2  { color: var(--color-text-title);
+  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em; }
  
 /* наша команда фотографії працівників */
 
-  .our-team {background-color: #F5F4FA; }
-  .our-team h2 { color: #212121; }   
-  .our-team .list h3 { color: #212121; } 
+  .our-team {background-color:var(--color-background-our-team); }
+  .our-team h2 { color: var(--color-text-title);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }   
+  .our-team .list h3 { color:var(--color-text-title); 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em; } 
+    
+.our-team .list p { 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em; } 
+
 
   /* підвал футер */
-  .logofut-stud { color: #FFFFFF; }
-  .logo-wais-web { color: #2196F3; }
+  .logofut-stud { color:var(--color-logo-studio-footer) ; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em; }
 
-  .basement {background-color: #2F303A; }
-  .adresa { 
-    color: rgba(255, 255, 255, 0.6); }
+  .logo-wais-web { color:var(--color-logo-web-footer); }
 
-  .basement, .adresa:hover,
-  .basement, .adresa:focus { color: rgba(255, 255, 255, 1); }
+  .basement {background-color:var(--color-background-footer-basement); }
 
+.adresa, .adre { 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em; }
+
+  .adresa {color:var(--color-primary-contact-Information-footer) ;
+    font-style: normal; }
   
+
+  .adresa:hover,
+  .adresa:focus { color:var(--color-accent-contact-Information-footer) ; }
+
+  .adre { color:var(--color-text-map); 
+  font-style: normal; }
+  .adre:hover,
+  .adre:focus { color:var(--color-accent-contact-Information-footer) ; }
+
+
+
+
+
+
+
 
 
 /* Портфоліо  стилі для другої сторінки з імям Портфоліо */
 
-.page-portfolio { background-color: #FFFFFF ; }
 
 /* F5F5F5  фон сторінки */
-.filters, .projects { background-color: #F5F5F5 ; }
-
+.filters, .projects {background-color: var(--color-background-feature-list);}
+.filters h1 {font-size: 0px;}
 /* кнопки    налаштування кнопок (фільтри) */
 .filter-but { 
-  color: #212121;
-  background-color: #F5F4FA; 
-  font-size: 24px;
+  color:var(--color-text-filter-but ) ;
+  background-color: var(--color-background-filter-but) ;   
     cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
    }
 
    .filter-but:hover,
    .filter-but:focus {  
-    color:   #FFFFFF;
-    background-color: #2196F3; }
+    color: var( --color-accent-text-filter-but) ;
+    background-color: var(--color-accent-background-filter-but) ; }
 
     /* секція із фотографіями */
 /* ховаю заголовок h1 */
+
+
 .projects h1 {font-size: 0px; }
-.projects h2 { color: #212121; }
-.projects p { color: #757575; }
+.projects h2 { color: var(--color-text-filter-but);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+   }
+.projects p { color: var(--color-text-paragraph) ; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em; }
      
 
 
