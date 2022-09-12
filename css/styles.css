@@ -3,7 +3,7 @@
 :root { 
   --color-background-top-line: #FFFFFF;
   --color-background-hero: #2F303A;
-  --color-background-feature-list: #F5F5F5  ;
+  --color-background-feature-list: #ffffff  ;
   --color-background-photo-robota: #F5F5F5  ;
   --color-background-our-team: #F5F4FA  ;
   --color-background-footer-basement: #2F303A  ;
@@ -31,8 +31,7 @@
   --color-accent-text-filter-but : #FFFFFF;
  }
 body { 
-  background-color:  var(--color-background-top-line);
-  color: var(--color-text-paragraph);
+    color: var(--color-text-paragraph);
   font-family: 'Roboto', sans-serif; 
   font-style: normal;
 font-weight: 400;
@@ -96,18 +95,23 @@ letter-spacing: 0.03em;
 
   .hero { 
     background-color:var(--color-background-hero); 
-    color:var(--color-text-hero) ; 
-     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;    
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase; }
+  }
+  .hero h1 { 
+      color:var(--color-text-hero) ; 
+    font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;    
+   text-align: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;  }
+
+
  
   
 .button { 
   color:var(--color-button-text) ;
   background-color:var(--color-primary-background-button) ; 
+  cursor: pointer;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -124,7 +128,7 @@ letter-spacing: 0.03em;
   background-color: var(--color-accent-background-button);}
 
   
-  .feature-list {  background-color: var(--color-background-feature-list); }
+ 
   /* ховаю заголовок (наші особливості) */
   .feature-list > h2 {font-size: 0px; }
   /* колір заголовків.. а колір тексту визначається як основний на сторінці */
@@ -136,7 +140,7 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
     text-transform: uppercase; }
 
-  .photo-robota  {  background-color:var(--color-background-photo-robota);    }
+ 
   .photo-robota h2  { color: var(--color-text-title);
   
     font-style: normal;
@@ -176,6 +180,7 @@ letter-spacing: 0.03em;
 
   /* підвал футер */
   .logofut-stud { color:var(--color-logo-studio-footer) ; 
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -216,15 +221,15 @@ letter-spacing: 0.03em;
 /* Портфоліо  стилі для другої сторінки з імям Портфоліо */
 
 
-/* F5F5F5  фон сторінки */
-.filters, .projects {background-color: var(--color-background-feature-list);}
+
+
 .filters h1 {font-size: 0px;}
 /* кнопки    налаштування кнопок (фільтри) */
 .filter-but { 
   color:var(--color-text-filter-but ) ;
   background-color: var(--color-background-filter-but) ;   
     cursor: pointer;
-    font-family: 'Roboto';
+    font-family: 'inherit';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
