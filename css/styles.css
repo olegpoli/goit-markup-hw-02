@@ -229,7 +229,7 @@ letter-spacing: 0.03em;
   color:var(--color-text-filter-but ) ;
   background-color: var(--color-background-filter-but) ;   
     cursor: pointer;
-    font-family: 'inherit';
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
